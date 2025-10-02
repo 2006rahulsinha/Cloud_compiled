@@ -1,0 +1,32 @@
+{
+  "name": "existing-nextjs-cloudsim-integration",
+  "version": "1.0.0",
+  "description": "CloudSim Plus integration utilities for existing Next.js applications",
+  "main": "integrate-with-existing-nextjs.js",
+  "scripts": {
+    "integrate": "./integration-scripts/integrate-with-github-repo.sh",
+    "integrate-windows": "./integration-scripts/integrate-with-github-repo.bat",
+    "build-cloudsim": "cd cloudsim-simulation && mvn clean compile",
+    "run-cloudsim": "cd cloudsim-simulation && mvn exec:java",
+    "run-cloudsim-monitor": "cd cloudsim-simulation && mvn exec:java -Dexec.args='--monitor'"
+  },
+  "keywords": [
+    "nextjs",
+    "cloudsim",
+    "integration", 
+    "performance",
+    "cloud-computing",
+    "simulation"
+  ],
+  "author": "CloudSim Integration Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2006rahulsinha/Cloud_project"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
